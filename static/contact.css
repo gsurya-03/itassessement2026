@@ -1,0 +1,138 @@
+
+/* CONTACT SECTION */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  background: rgba(199, 7, 7, 0.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  margin-top: 40px;
+}
+
+body.light .contact-container {
+  background: rgba(0,0,0,0.03);
+}
+
+.contact-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-subtext {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  opacity: 0.7;
+}
+
+/* INPUT GROUP */
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  color: inherit;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+body.light .input-group input,
+body.light .input-group textarea {
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+/* FLOATING LABEL */
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  font-size: 0.85rem;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-group textarea + label {
+  top: 20px;
+}
+
+/* ANIMATION */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 0.7rem;
+  background: var(--bg-dark);
+  padding: 0 5px;
+  color: var(--accent);
+}
+
+body.light .input-group input:focus + label,
+body.light .input-group input:valid + label,
+body.light .input-group textarea:focus + label,
+body.light .input-group textarea:valid + label {
+  background: var(--bg-light);
+}
+
+/* BUTTON */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(30,144,255,0.4);
+}
+
+/* ERROR TEXT */
+.error {
+  color: #ff4d4d;
+  font-size: 0.75rem;
+  display: block;
+  margin-top: 5px;
+  text-align: left;
+}
+
+/* INPUT ERROR STATE */
+.input-group.error input,
+.input-group.error textarea {
+  border-color: #ff4d4d;
+}
+
+/* SUCCESS STATE */
+.input-group.success input,
+.input-group.success textarea {
+  border-color: #28a745;
+}
+
+/* SUCCESS MESSAGE */
+.form-success {
+  margin-top: 1rem;
+  color: #28a745;
+  font-size: 0.9rem;
+}

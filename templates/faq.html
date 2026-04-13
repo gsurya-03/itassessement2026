@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalaya Horizons Adventures</title>
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- icon library and toolkit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .heading-font { font-family: 'Playfair Display', Georgia, serif; }
+        .max-w-site { max-width: 1280px; margin: 0 auto; }
+    </style>
+</head>
+<body class="bg-[#F8F1E3] text-[#3F2A1E]">
+
+    <!-- navbar-->
+    <nav class="bg-[#0A2540] text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-site px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-mountain text-3xl text-[#FF6200]"></i>
+                <h1 class="text-2xl font-bold heading-font tracking-tight">Himalaya Horizons</h1>
+            </div>
+            
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="index.html" target="_blank" class="nav-link">HOME</a>
+                    <a href="about.html" target="_blank" class="nav-link">ABOUT US</a>
+                    <a href="gallery.html" target="_blank" class="nav-link">GALLERY</a>
+                    <a href="faq.html" target="_blank" class="nav-link">FAQ</a>
+                    <a href="contact.html" target="_blank" class="nav-link">CONTACT</a>
+                </div>
+            
+            <a href="contact.html" class="bg-[#FF6200] hover:bg-orange-600 px-7 py-3 rounded-full text-sm font-semibold flex items-center gap-2 flex-shrink-0">
+                <i class="fa-solid fa-paper-plane"></i> BOOK NOW
+            </a>
+            
+            <button id="hamburger" class="md:hidden text-2xl ml-4">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- FAQ Content -->
+    <div class="max-w-site mx-auto px-6 py-16">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+            <h2 class="text-5xl font-bold heading-font mb-6">Frequently Asked Questions</h2>
+            <p class="text-xl text-[#6B5A4A]">Everything you need to know before your Himalayan adventure</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-6">
+            <details class="bg-white rounded-3xl p-8 shadow-xl group">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
+                    <span>Do I need a visa to visit Nepal?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                </summary>
+                <p class="mt-6 text-[#6B5A4A]">Yes, most nationalities require a visa. You can obtain a visa on arrival at Tribhuvan International Airport in Kathmandu or apply in advance at a Nepalese embassy.</p>
+            </details>
+
+            <details class="bg-white rounded-3xl p-8 shadow-xl group">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
+                    <span>What is the best time to trek in Nepal?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                </summary>
+                <p class="mt-6 text-[#6B5A4A]">The best seasons are Spring (March–May) and Autumn (September–November) when the weather is clear and views are spectacular.</p>
+            </details>
+
+            <details class="bg-white rounded-3xl p-8 shadow-xl group">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
+                    <span>Is trekking difficult? Do I need to be very fit?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                </summary>
+                <p class="mt-6 text-[#6B5A4A]">We offer treks for all levels. Moderate fitness is recommended. Our guides will adjust the pace to suit your group.</p>
+            </details>
+
+            <details class="bg-white rounded-3xl p-8 shadow-xl group">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
+                    <span>Are your guides and staff insured?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                </summary>
+                <p class="mt-6 text-[#6B5A4A]">Yes. All our guides, porters, and staff are fully insured and licensed by the Nepal Tourism Board.</p>
+            </details>
+
+            <details class="bg-white rounded-3xl p-8 shadow-xl group">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
+                    <span>What kind of accommodation is provided during the trek?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                </summary>
+                <p class="mt-6 text-[#6B5A4A]">We use comfortable teahouses/lodges with basic rooms and shared bathrooms. Camping options are available for remote routes.</p>
+            </details>
+
+            <details class="bg-white rounded-3xl p-8 shadow-xl group">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
+                    <span>Do you provide porters?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                </summary>
+                <p class="mt-6 text-[#6B5A4A]">Yes, we provide experienced porters who carry your main luggage so you can trek lightly with just a daypack.</p>
+            </details>
+        </div>
+
+        <div class="text-center mt-16">
+            <p class="text-lg">Still have questions?</p>
+            <a href="contact.html" class="inline-block mt-4 bg-[#FF6200] hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold">
+                Contact Us
+            </a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#0A2540] text-white py-12">
+        <div class="max-w-site mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <!-- same footer content -->
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-mountain text-3xl text-[#FF6200]"></i>
+                    <h3 class="text-2xl font-bold heading-font">Himalaya Horizons</h3>
+                </div>
+                <p class="text-sm">Dhapakhel, Lalitpur, Nepal<br>
+                +977 9820816774 | info@himalayahorizons.com</p>
+                <p class="text-xs mt-6">© 2026 All Rights Reserved</p>
+            </div>
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-3">Quick Navigation</p>
+                <div class="grid grid-cols-2 text-sm gap-y-2">
+                    <a href="index.html" class="hover:text-[#FF6200]">Home</a>
+                    <a href="gallery.html" class="hover:text-[#FF6200]">Photo Gallery</a>
+                    <a href="about.html" class="hover:text-[#FF6200]">About Us</a>
+                    <a href="faq.html" class="hover:text-[#FF6200]">FAQ</a>
+                    <a href="contact.html" class="hover:text-[#FF6200]">Contact</a>
+                </div>
+            </div>
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-3">Follow Your Adventure</p>
+                <a href="https://www.instagram.com/trivial_meeh/" target="_blank" class="inline-block text-3xl hover:text-[#FF6200] mr-6"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61577970337597" target="_blank" class="inline-block text-3xl hover:text-[#FF6200]"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

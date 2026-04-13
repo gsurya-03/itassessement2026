@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalaya Horizons Adventures</title>
+    
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- icon library and toolkit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .heading-font { font-family: 'Playfair Display', Georgia, serif; }
+        .max-w-site { max-width: 1280px; margin: 0 auto; }
+    </style>
+</head>
+<body class="bg-[#F8F1E3] text-[#3F2A1E]">
+
+    <!-- navbar -->
+    <nav class="bg-[#0A2540] text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-site px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-mountain text-3xl text-[#FF6200]"></i>
+                <h1 class="text-2xl font-bold heading-font tracking-tight">Himalaya Horizons</h1>
+            </div>
+            
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="index.html" target="_blank" class="nav-link">HOME</a>
+                    <a href="about.html" target="_blank" class="nav-link">ABOUT US</a>
+                    <a href="gallery.html" target="_blank" class="nav-link">GALLERY</a>
+                    <a href="faq.html" target="_blank" class="nav-link">FAQ</a>
+                    <a href="contact.html" target="_blank" class="nav-link">CONTACT</a>
+                </div>
+            
+            <a href="contact.html" class="bg-[#FF6200] hover:bg-orange-600 px-7 py-3 rounded-full text-sm font-semibold flex items-center gap-2 flex-shrink-0">
+                <i class="fa-solid fa-paper-plane"></i> BOOK NOW
+            </a>
+            
+            <button id="hamburger" class="md:hidden text-2xl ml-4">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- contact section -->
+    <div class="max-w-site mx-auto px-6 py-16">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+            <h2 class="text-5xl font-bold heading-font mb-6">Our Story</h2>
+            <p class="text-xl text-[#6B5A4A]">Born in the shadow of the world's highest peaks, Himalaya Horizons was founded with one simple dream to share the magic of the Himalayas responsibly and passionately.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="text-3xl font-bold heading-font mb-6">Who We Are</h3>
+                <p class="text-lg leading-relaxed mb-6">
+                    We are a locally owned adventure company based in Kathmandu, Nepal. With over a decade of experience, our team of expert Sherpa guides, knowledgeable local staff, and passionate travel enthusiasts curate unforgettable journeys into the heart of the Himalayas.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    From the iconic Everest Base Camp to the serene Annapurna Sanctuary, from cultural tours in Kathmandu Valley to off-the-beaten-path treks, we believe every adventure should be safe, sustainable, and deeply meaningful.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-xl">
+                <div class="flex items-center gap-4 mb-8">
+                    <i class="fa-solid fa-mountain text-4xl text-[#FF6200]"></i>
+                    <div>
+                        <p class="font-semibold">100% Local Team</p>
+                        <p class="text-sm text-[#6B5A4A]">Expert Sherpa guides &amp; porters</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <i class="fa-solid fa-leaf text-4xl text-[#FF6200]"></i>
+                    <div>
+                        <p class="font-semibold">Eco-Friendly Travel</p>
+                        <p class="text-sm text-[#6B5A4A]">Leave No Trace &amp; community support</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-heart text-4xl text-[#FF6200]"></i>
+                    <div>
+                        <p class="font-semibold">Personalized Adventures</p>
+                        <p class="text-sm text-[#6B5A4A]">Tailored to your pace and dreams</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 px-4 text-white text-center">
+        <h3 class="text-3xl font-bold mb-8 text-black">Why Choose Us?</h3>
+
+        <div class="overflow-hidden rounded-2xl shadow-lg border border-[#1f2a37] max-w-5xl mx-auto">
+            <table class="w-full border-collapse text-left">
+                    <!-- Row 1 -->
+                    <tr class="border-b border-[#1f2a37] hover:bg-[#1a2433] transition">
+                        <td class="bg-[#0f1a24] w-1/4 p-6 text-center align-top">
+                        <i class="fa-solid fa-users text-3xl text-[#FF6200]"></i>
+                        </td>
+                        <td class="bg-[#111827] p-6">
+                        <h4 class="font-semibold text-lg mb-2">Experienced Guides</h4>
+                        <p class="text-[#cbd5e1] text-sm">
+                            Licensed, insured, and deeply knowledgeable about the mountains and local culture.
+                        </p>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2 -->
+                    <tr class="border-b border-[#1f2a37] hover:bg-[#1a2433] transition">
+                        <td class="bg-[#0f1a24] p-6 text-center align-top">
+                        <i class="fa-solid fa-shield-halved text-3xl text-[#FF6200]"></i>
+                        </td>
+                        <td class="bg-[#111827] p-6">
+                        <h4 class="font-semibold text-lg mb-2">Safety First</h4>
+                        <p class="text-[#cbd5e1] text-sm">
+                            Comprehensive medical support, emergency protocols, and satellite communication on every trek.
+                        </p>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3 -->
+                    <tr class="hover:bg-[#1a2433] transition">
+                        <td class="bg-[#0f1a24] p-6 text-center align-top">
+                        <i class="fa-solid fa-hand-holding-heart text-3xl text-[#FF6200]"></i>
+                        </td>
+                        <td class="bg-[#111827] p-6">
+                        <h4 class="font-semibold text-lg mb-2">Community Impact</h4>
+                        <p class="text-[#cbd5e1] text-sm">
+                            We support local schools, conservation projects, and fair wages for our porters and staff.
+                        </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#0A2540] text-white py-12">
+        <div class="max-w-site mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-mountain text-3xl text-[#FF6200]"></i>
+                    <h3 class="text-2xl font-bold heading-font">Himalaya Horizons</h3>
+                </div>
+                <p class="text-sm">Dhapakhel, Lalitpur, Nepal<br>
+                +977 9820816774 | info@himalayahorizons.com</p>
+                <p class="text-xs mt-6">© 2026 All Rights Reserved</p>
+            </div>
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-3">Quick Navigation</p>
+                <div class="grid grid-cols-2 text-sm gap-y-2">
+                    <a href="index.html" class="hover:text-[#FF6200]">Home</a>
+                    <a href="about.html" class="hover:text-[#FF6200]">About Us</a>
+                    <a href="gallery.html" class="hover:text-[#FF6200]">Gallery</a>
+                    <a href="faq.html" class="hover:text-[#FF6200]">FAQ</a>
+                    <a href="contact.html" class="hover:text-[#FF6200]">Contact</a>
+                </div>
+            </div>
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-3">Follow Your Adventure</p>
+                <a href="https://www.instagram.com/trivial_meeh/" target="_blank" class="inline-block text-3xl hover:text-[#FF6200] mr-6"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61577970337597" target="_blank" class="inline-block text-3xl hover:text-[#FF6200]"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalaya Horizons Adventures</title>
+    
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- external css -->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- icon library and toolkit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-[#F8F1E3] text-[#1A1A1A]">
+
+    <!-- navbar -->
+    <nav class="bg-[#0A2540] text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-site px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-mountain text-3xl text-[#FF6200]"></i>
+                <h1 class="text-2xl font-bold heading-font tracking-tight">Himalaya Horizons</h1>
+            </div>
+            
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="index.html" target="_blank" class="nav-link">HOME</a>
+                    <a href="about.html" target="_blank" class="nav-link">ABOUT US</a>
+                    <a href="gallery.html" target="_blank" class="nav-link">GALLERY</a>
+                    <a href="faq.html" target="_blank" class="nav-link">FAQ</a>
+                    <a href="contact.html" target="_blank" class="nav-link">CONTACT</a>
+                </div>
+            
+            <a href="contact.html" class="bg-[#FF6200] hover:bg-orange-600 px-6 py-3 rounded-full text-sm font-semibold flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                BOOK NOW
+            </a>
+        </div>
+    </nav>
+
+    <!-- hero slider / image slider -->
+    <div id="hero" class="relative h-screen overflow-hidden">
+        <div id="slide1" class="hero-slide absolute inset-0 bg-cover bg-center flex items-center" 
+             style="background-image: url('https://picsum.photos/id/29/1920/1080')">
+            <div class="max-w-site px-6 text-white z-10">
+                <h2 class="text-6xl md:text-7xl font-bold heading-font leading-none mb-4">CHASE THE PEAKS</h2>
+                <p class="text-2xl mb-8 max-w-md">Trek Nepal with heart. Adventure of a lifetime awaits.</p>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
+        </div>
+
+        <div id="slide2" class="hero-slide absolute inset-0 bg-cover bg-center hidden flex items-center" 
+             style="background-image: url('https://picsum.photos/id/538/1920/1080')">
+            <div class="max-w-site px-6 text-white z-10">
+                <h2 class="text-6xl md:text-7xl font-bold heading-font leading-none mb-4">ANNAPURNA BASE CAMP</h2>
+                <p class="text-2xl mb-8 max-w-md">10 days • Moderate • 4130m</p>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
+        </div>
+
+        <div id="slide3" class="hero-slide absolute inset-0 bg-cover bg-center hidden flex items-center" 
+             style="background-image: url('https://picsum.photos/id/256/1920/1080')">
+            <div class="max-w-site px-6 text-white z-10">
+                <h2 class="text-6xl md:text-7xl font-bold heading-font leading-none mb-4">EVEREST VIEW TREK</h2>
+                <p class="text-2xl mb-8 max-w-md">The world's most iconic mountain awaits you</p>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
+        </div>
+
+        <!-- controls -->
+        <div class="absolute bottom-10 left-1/2 flex gap-4 z-20">
+            <button onclick="prevSlide()" class="bg-white/30 hover:bg-white/50 text-white p-4 rounded-full backdrop-blur"><i class="fa-solid fa-chevron-left"></i></button>
+            <button onclick="nextSlide()" class="bg-white/30 hover:bg-white/50 text-white p-4 rounded-full backdrop-blur"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="absolute bottom-8 right-8 flex gap-2 z-20">
+            <button onclick="goToSlide(1)" id="dot1" class="w-4 h-4 bg-white rounded-full"></button>
+            <button onclick="goToSlide(2)" id="dot2" class="w-4 h-4 bg-white/50 rounded-full"></button>
+            <button onclick="goToSlide(3)" id="dot3" class="w-4 h-4 bg-white/50 rounded-full"></button>
+        </div>
+    </div>
+
+    <!-- popular trek tables -->
+    <div class="max-w-site px-6 py-16">
+        <h2 class="text-4xl font-bold heading-font text-center mb-10">Popular Treks</h2>
+        <table class="w-full border-collapse border border-[#0A2540]">
+            <thead>
+                <tr class="bg-[#0A2540] text-white">
+                    <th class="p-4 text-left">Trek Name</th>
+                    <th class="p-4 text-left">Duration</th>
+                    <th class="p-4 text-left">Max Altitude</th>
+                    <th class="p-4 text-left">Difficulty</th>
+                    <th class="p-4 text-right">Price (USD)</th>
+                </tr>
+            </thead>
+            <tbody class="text-sm">
+                <tr class="border-b border-gray-300">
+                    <td class="p-4 font-semibold">Everest Base Camp</td>
+                    <td class="p-4">14 Days</td>
+                    <td class="p-4">5364m</td>
+                    <td class="p-4">Hard</td>
+                    <td class="p-4 text-right font-bold">$1,450</td>
+                </tr>
+                <tr class="border-b border-gray-300 bg-[#F8F1E3]">
+                    <td class="p-4 font-semibold">Annapurna Circuit</td>
+                    <td class="p-4">18 Days</td>
+                    <td class="p-4">5416m</td>
+                    <td class="p-4">Moderate</td>
+                    <td class="p-4 text-right font-bold">$1,280</td>
+                </tr>
+                <tr class="border-b border-gray-300">
+                    <td colspan="5" class="p-4 bg-[#FF6200] text-white text-center font-semibold">
+                        <i class="fa-solid fa-gem mr-2"></i> SPECIAL OFFER: 15% OFF if you book before May 2026!
+                    </td>
+                </tr>
+                <tr>
+                    <td class="p-4 font-semibold">Langtang Valley</td>
+                    <td class="p-4">8 Days</td>
+                    <td class="p-4">3870m</td>
+                    <td class="p-4">Easy</td>
+                    <td class="p-4 text-right font-bold">$890</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#0A2540] text-white py-12">
+        <div class="max-w-site px-6 grid md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fa-solid fa-mountain text-3xl text-[#FF6200]"></i>
+                    <h3 class="text-2xl font-bold heading-font">Himalaya Horizons</h3>
+                </div>
+                <p class="text-sm">Dhapakhel, lalitpur, Nepal<br>
+                +977 9820816774 | info@himalayahorizons.com</p>
+                <p class="text-xs mt-6">© 2026 All Rights Reserved</p>
+            </div>
+            
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-3">Quick Navigation</p>
+                <div class="grid grid-cols-2 text-sm gap-y-2">
+                    <a href="index.html" class="hover:text-[#FF6200]">Home</a>
+                    <a href="gallery.html" class="hover:text-[#FF6200]">Photo Gallery</a>
+                    <a href="about.html" class="hover:text-[#FF6200]">About Us</a>
+                    <a href="faq.html" class="hover:text-[#FF6200]">FAQ</a>
+                    <a href="contact.html" class="hover:text-[#FF6200]">Contact</a>
+                </div>
+            </div>
+            
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-3">Follow Your Adventure</p>
+                <a href="https://www.instagram.com/trivial_meeh/" target="_blank" class="inline-block text-3xl hover:text-[#FF6200] mr-6"><i class="fa-brands fa-instagram"></i></a> <!-- this is my insta id btw --> 
+                <a href="https://www.facebook.com/profile.php?id=61577970337597" target="_blank" class="inline-block text-3xl hover:text-[#FF6200]"><i class="fa-brands fa-facebook"></i></a> <!-- this is my facebook -->
+                <p class="text-xs mt-8"></p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

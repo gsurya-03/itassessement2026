@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalaya Horizons Adventures</title>
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="/static/gallery.css">
+
+    <!-- icon library and toolkit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-[#F8F1E3]">
+
+    <!-- navbar -->
+    <nav class="bg-[#0A2540] text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-site px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-mountain text-3xl text-[#FF6200]"></i>
+                <h1 class="text-2xl font-bold heading-font tracking-tight">Himalaya Horizons</h1>
+            </div>
+            
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="index.html" target="_blank" class="nav-link">HOME</a>
+                    <a href="about.html" target="_blank" class="nav-link">ABOUT US</a>
+                    <a href="gallery.html" target="_blank" class="nav-link">GALLERY</a>
+                    <a href="faq.html" target="_blank" class="nav-link">FAQ</a>
+                    <a href="contact.html" target="_blank" class="nav-link">CONTACT</a>
+                </div>
+            
+            <a href="contact.html" class="bg-[#FF6200] hover:bg-orange-600 px-6 py-3 rounded-full text-sm font-semibold flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                BOOK NOW
+            </a>
+        </div>
+    </nav>
+
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0A2540] py-6 px-6 flex flex-col gap-5 text-sm font-medium border-t border-[#1e3a5f]">
+        <a href="index.html" class="hover:text-[#FF6200]">HOME</a>
+        <a href="about.html" class="hover:text-[#FF6200]">ABOUT US</a>
+        <a href="destinations.html" class="hover:text-[#FF6200]">DESTINATIONS</a>
+        <a href="gallery.html" class="hover:text-[#FF6200]">GALLERY</a>
+        <a href="experiences.html" class="hover:text-[#FF6200]">EXPERIENCES</a>
+        <a href="faq.html" class="hover:text-[#FF6200]">FAQ</a>
+        <a href="contact.html" class="hover:text-[#FF6200]">CONTACT</a>
+    </div>
+    
+
+    <div class="gallery-section max-w-site mb-12">
+        <h2 class="text-4xl font-bold heading-font text-center mb-4">Our Himalayan Adventures</h2>
+        
+        <div class="gallery-grid">
+            <div class="thumbnail-container"><img src="https://images.unsplash.com/photo-1718880474770-1952b4e5f37c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onclick="openLightbox(this.src, this.alt)" alt="Annapurna sunrise" class="thumbnail"></div>
+            <div class="thumbnail-container"><img src="https://images.unsplash.com/photo-1652501834567-937de29c4533?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onclick="openLightbox(this.src, this.alt)" alt="Everest Base Camp" class="thumbnail"></div>
+            <div class="thumbnail-container"><img src="https://images.unsplash.com/photo-1513614835783-51537729c8ba?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onclick="openLightbox(this.src, this.alt)" alt="Prayer flags at high pass" class="thumbnail"></div>
+            <div class="thumbnail-container"><img src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onclick="openLightbox(this.src, this.alt)" alt="Trekkers on ridge" class="thumbnail"></div>
+            <div class="thumbnail-container"><img src="https://images.unsplash.com/photo-1519719498756-2f0d81cdf13b?q=80&w=1499&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onclick="openLightbox(this.src, this.alt)" alt="Machapuchare peak" class="thumbnail"></div>
+            <div class="thumbnail-container"><img src="https://plus.unsplash.com/premium_photo-1692386759483-c3b25c241acd?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onclick="openLightbox(this.src, this.alt)" alt="Lake in Himalayas" class="thumbnail"></div>
+            <div class="thumbnail-container"><img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onclick="openLightbox(this.src, this.alt)" alt="Yak caravan" class="thumbnail"></div>
+            <div class="thumbnail-container"><img src="https://images.unsplash.com/photo-1673505413397-0cd0dc4f5854?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" onclick="openLightbox(this.src, this.alt)" alt="Golden sunrise over peaks" class="thumbnail"></div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0A2540] text-white py-12">
+        <div class="max-w-site px-6 grid md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-3 mb-4" >
+                    <i class="fa-solid fa-mountain text-3xl text-[#FF6200]"></i>
+                    <h3 class="text-2xl font-bold heading-font">Himalaya Horizons</h3>
+                </div>
+                <p class="text-sm">Dhapakhel, lalitpur, Nepal<br>
+                +977 9820816774 | info@himalayahorizons.com</p>
+                <p class="text-xs mt-6">© 2026 All Rights Reserved</p>
+            </div>
+            
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-3">Quick Navigation</p>
+                <div class="grid grid-cols-2 text-sm gap-y-2">
+                    <a href="index.html" class="hover:text-[#FF6200]">Home</a>
+                    <a href="gallery.html" class="hover:text-[#FF6200]">Photo Gallery</a>
+                    <a href="about.html" class="hover:text-[#FF6200]">About Us</a>
+                    <a href="faq.html" class="hover:text-[#FF6200]">FAQ</a>
+                    <a href="contact.html" class="hover:text-[#FF6200]">Contact</a>
+                </div>
+            </div>
+            
+            <div>
+                <p class="uppercase text-xs tracking-widest mb-3">Follow Your Adventure</p>
+                <a href="https://www.instagram.com/trivial_meeh/" target="_blank" class="inline-block text-3xl hover:text-[#FF6200] mr-6"><i class="fa-brands fa-instagram"></i></a> <!-- this is my insta id btw --> 
+                <a href="https://www.facebook.com/profile.php?id=61577970337597" target="_blank" class="inline-block text-3xl hover:text-[#FF6200]"><i class="fa-brands fa-facebook"></i></a> <!-- this is my facebook -->
+                <p class="text-xs mt-8"></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
