@@ -193,6 +193,18 @@
         showSuccess(messageInput);
     }
 
+    // SUCCESS
+    if (isValid) {
+        form.reset();
+
+        const successMsg = document.createElement("div");
+        successMsg.classList.add("form-success");
+        successMsg.textContent = "Message sent successfully!";
+
+        form.appendChild(successMsg);
+
+        setTimeout(() => successMsg.remove(), 3000);
+    }
     });
     </script>    
 
