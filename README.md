@@ -50,6 +50,9 @@ final_IT-project/
 │   ├── wireframe3.pdf
 │   ├── wireframe4.pdf
 │   └── wireframe5.pdf
+│
+├── mountain-solid-full.ico  
+│
 └── README.md
 ```
 ---
