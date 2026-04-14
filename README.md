@@ -45,11 +45,11 @@ final_IT-project/
 │   ├── gallery.html
 │   └── index.html
 ├── wireframes
-│   ├── wireframe1.pdf
-│   ├── wireframe2.pdf
-│   ├── wireframe3.pdf
-│   ├── wireframe4.pdf
-│   └── wireframe5.pdf
+│   ├── about-us.pdf
+│   ├── contact.pdf
+│   ├── faq.pdf
+│   ├── gallery.pdf
+│   └── home.pdf
 ├── mountain-solid-full.ico  
 │
 └── README.md
